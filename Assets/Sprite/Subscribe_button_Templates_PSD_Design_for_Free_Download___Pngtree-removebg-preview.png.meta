@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 9fae79e3a7785cb4a94cd0bd0d0ec8e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 251665392654209675
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_0
+  - first:
+      213: 4406748006658382649
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_1
+  - first:
+      213: 3064723519049758976
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_2
+  - first:
+      213: 6018770807483372431
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_3
+  - first:
+      213: -5861800142218070086
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_4
+  - first:
+      213: 2464892187996248520
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_5
+  - first:
+      213: 7654888491749972785
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_6
+  - first:
+      213: 2737779540985486506
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_7
+  - first:
+      213: -8211755836630318734
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_8
+  - first:
+      213: -6061128961622360680
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_9
+  - first:
+      213: 3879949853070088775
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_10
+  - first:
+      213: -6598137120612478714
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_11
+  - first:
+      213: 4356573725400169001
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_12
+  - first:
+      213: -771510720921774177
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_13
+  - first:
+      213: 1221725282089681368
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_14
+  - first:
+      213: 1076561483501727025
+    second: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82d96b57581e7300800000000000000
+      internalID: 251665392654209675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b988fc6f9e72d30800000000000000
+      internalID: 4406748006658382649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 259
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009febf8dc5188a20800000000000000
+      internalID: 3064723519049758976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 259
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83998c1928f68350800000000000000
+      internalID: 6018770807483372431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 188
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7f1cae3d3b6aea0800000000000000
+      internalID: -5861800142218070086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 188
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9d62ba26e053220800000000000000
+      internalID: 2464892187996248520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 188
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b9bf1a680ab3a60800000000000000
+      internalID: 7654888491749972785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 188
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac95c5bcfb8ef520800000000000000
+      internalID: 2737779540985486506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 117
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271c867039bf90e80800000000000000
+      internalID: -8211755836630318734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 116
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dbaa8925b82eba0800000000000000
+      internalID: -6061128961622360680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 117
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a5292a5d958d530800000000000000
+      internalID: 3879949853070088775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 117
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601139a4f35be64a0800000000000000
+      internalID: -6598137120612478714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 43
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92af64c98b8a57c30800000000000000
+      internalID: 4356573725400169001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 43
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f975d03461b0b45f0800000000000000
+      internalID: -771510720921774177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 43
+        width: 59
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1c11ccba074f010800000000000000
+      internalID: 1221725282089681368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subscribe_button_Templates_PSD_Design_for_Free_Download___Pngtree-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 43
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13decf227f6b0fe00800000000000000
+      internalID: 1076561483501727025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

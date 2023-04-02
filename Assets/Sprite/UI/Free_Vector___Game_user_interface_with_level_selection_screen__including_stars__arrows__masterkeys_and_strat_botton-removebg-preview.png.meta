@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: 950c40acf8a294342a79a56b9a7f4516
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3978987092012439753
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_0
+  - first:
+      213: 7972732379565200346
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_1
+  - first:
+      213: 2204188621101781547
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_2
+  - first:
+      213: 257908873137557185
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_3
+  - first:
+      213: 3485634536400793247
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_4
+  - first:
+      213: 4272940398467985992
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_5
+  - first:
+      213: -3832535085176556306
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_6
+  - first:
+      213: -6500491607989017173
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_7
+  - first:
+      213: 3685282430342153431
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_8
+  - first:
+      213: 5478623722806725159
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_9
+  - first:
+      213: 2310929302341397001
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_10
+  - first:
+      213: -8462411709486522308
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_11
+  - first:
+      213: -3196730846682436934
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_12
+  - first:
+      213: -2227632860220581576
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_13
+  - first:
+      213: 6049413538794109496
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_14
+  - first:
+      213: -4572216851273923263
+    second: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 370
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c81449bda3383730800000000000000
+      internalID: 3978987092012439753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 370
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad31d3d9bd5d4ae60800000000000000
+      internalID: 7972732379565200346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 370
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22dab26fd9d69e10800000000000000
+      internalID: 2204188621101781547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 370
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce09cfe0c6449300800000000000000
+      internalID: 257908873137557185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 255
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ea007a4267f5030800000000000000
+      internalID: 3485634536400793247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 255
+        width: 106
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842b91547a88c4b30800000000000000
+      internalID: 4272940398467985992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 255
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee474da45a910dac0800000000000000
+      internalID: -3832535085176556306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 255
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba52868d25d99c5a0800000000000000
+      internalID: -6500491607989017173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 141
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4488d48d0c42330800000000000000
+      internalID: 3685282430342153431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 141
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a4ce7bf3bf70c40800000000000000
+      internalID: 5478623722806725159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 140
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90aa917e4f1121020800000000000000
+      internalID: 2310929302341397001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 141
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3023f0d2697f8a80800000000000000
+      internalID: -8462411709486522308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 26
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abaa5f06b3ee2a3d0800000000000000
+      internalID: -3196730846682436934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 26
+        width: 106
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839909457bbd511e0800000000000000
+      internalID: -2227632860220581576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 25
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83af247ff85d3f350800000000000000
+      internalID: 6049413538794109496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Free_Vector___Game_user_interface_with_level_selection_screen__including_stars__arrows__masterkeys_and_strat_botton-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 25
+        width: 105
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14543c79ff83c80c0800000000000000
+      internalID: -4572216851273923263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
