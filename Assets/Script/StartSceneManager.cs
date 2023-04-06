@@ -9,6 +9,7 @@ using GooglePlayGames;
 using PlayFab;
 using PlayFab.ClientModels;
 
+
 public class StartSceneManager : MonoBehaviour
 {
     public AudioClip[] MainSound_Folder;
@@ -176,86 +177,25 @@ public class StartSceneManager : MonoBehaviour
         AlertInfoText.text="해당 아이템을 구매하시겠습니까?";
         AlertUI.SetActive(true);
     }
-    public void SetStat()
+    
+    public void SaveLevel()
     {
-        LoadingPanel.SetActive(true);
-        PlayFabClientAPI.UpdatePlayerStatistics(new UpdatePlayerStatisticsRequest
+        var request = new SetTitleDataRequest
         {
-            Statistics = new List<StatisticUpdate>
-            {
-                new StatisticUpdate {StatisticName = "Gold", Value = int.Parse(GoldText.text)},
-                new StatisticUpdate {StatisticName = "Stamina", Value = int.Parse(StaminaText.text)},
-                new StatisticUpdate {StatisticName = "Level", Value = int.Parse(LevelText.text)},
-            }
-        },
-        (result) => {Debug.Log("데이터 저장");GetStat();},
-        (error) => {Debug.Log("데이터 저장 실패");});
-        LoadingPanel.SetActive(false);
+            Key="Level",
+            Value=LevelText.text.ToString()
+        };
+        PlayFabClientAPI.SetTitleData(request,OnLevelSaved, OnError);
     }
 
-    public void GetStat()
+    public void OnLevelSaved()
     {
-        LoadingPanel.SetActive(true);
-        PlayFabClientAPI.GetPlayerStatistics(
-            new GetPlayerStatisticsRequest(),
-            (result) =>
-            {
-                Debug.Log("result : " + result);
-                if(result.Statistics.Count == 0){
-                        Debug.Log("1렙 세팅 완료");
-                        GoldText.text="500";
-                        StaminaText.text="200/200";
-                        LevelText.text="1";
-                        SetStat();
-                    }
-                else{
-                    foreach(var statistics in result.Statistics)
-                    {                      
-                        switch(statistics.StatisticName)
-                        {
-                            case "Gold":
-                                GoldText.text=statistics.Value.ToString();
-                                break;
-                            case "Stamina" : 
-                                StaminaText.text=statistics.Value.ToString() + "/200";
-                                break;
-                            case "Level" : 
-                                LevelText.text=statistics.Value.ToString();
-                                break;
-                        }
-                    }
-                }
-            },
-            (error) => {
-                Debug.Log("실패");
-                });
-        LoadingPanel.SetActive(false);
+        Debug.Log("레벨 저장 성공");
     }
-    public void OnClick_CharacterBlindUI()
+
+    public void OnError()
     {
-        ClickSound.Play();
-        MoveUINum=2;
-        AlertInfoText.text="캐릭터가 없습니다.\n카렌디아를 소환해 캐릭터를 뽑으시겠습니까?";
-        AlertUI.SetActive(true);
-    }
-    public void OnClick_AlertYes()
-    {
-        AlertUI.SetActive(false);
-        switch(MoveUINum){
-            case 1 :
-                ClickSound.Play();
-                Market_Option_Img[2].sprite=Change_Img;
-                Market_ScrollView[2].SetActive(true);
-                Market_UI.SetActive(true);
-                break;
-            case 2 :
-                OnClick_Blessing_UI();
-                break;
-            case 3 : //아이템(스테미나)구매 시
-                ClickSound.Play();
-                AddStamina(staminaBuyNum);
-                break;
-        }
+        Debug.Log("레벨 저장 실패");
     }
 
     public void OnClick_AlertNo()
@@ -288,10 +228,13 @@ public class StartSceneManager : MonoBehaviour
     }
     public void NextScene()
     {
-        
+        StartCoroutine(moveLoadingScene());
+    }
+    IEnumerator moveLoadingScene()
+    {
+        yield return YieldInstructionCache.WaitForSeconds(2.5f);
         SceneManager.LoadScene("LoadingScene");
     }
-
     public void OnClick_SwitchCharacter(int CharacterNum)
     {
         if(Global_CharacterNum!=CharacterNum){
@@ -510,4 +453,5 @@ public class StartSceneManager : MonoBehaviour
         GameInfoImage.sprite=GameInfoImageFolder[gameInfoImageNum];
         GameInfoText.text=GameInfoTextFolder[gameInfoImageNum];
     }
+    
 }
