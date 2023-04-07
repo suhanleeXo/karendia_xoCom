@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
 using GooglePlayGames;
-
 using PlayFab;
 using PlayFab.ClientModels;
 
@@ -17,16 +15,22 @@ public class StartManager : MonoBehaviour
     public GameObject DevLogin;
     public Text InputFieldText;
     public GameObject LoadingPanel;
-    
+
+    public GameObject Register_UI;
+    public Text NickNameText;
+    public bool isGoogleLoginOk;
+    public string userid;
+    public string displayName;
+
     void Start()
     {
         StartCoroutine("TouchActive");
-        scene_move_manager=GameObject.Find("SceneMoveManager").GetComponent<SceneMoveManager>();
+        scene_move_manager = GameObject.Find("SceneMoveManager").GetComponent<SceneMoveManager>();
 
-        PlayGamesPlatform.DebugLogEnabled=true; //디버그용 변수
+        PlayGamesPlatform.DebugLogEnabled = true; //디버그용 변수
         PlayGamesPlatform.Activate();//구글 관련 서비스 활성화
-        
-        
+
+
     }
 
     IEnumerator TouchActive()
@@ -35,17 +39,56 @@ public class StartManager : MonoBehaviour
         TouchUI.SetActive(true);
     }
 
-    public void OnClick_StartUI()
+    public void GoogleLogin() //구글 로그인 여부
     {
+        ClickSound.Play();
         LoadingPanel.SetActive(true);
-        ClickSound.Play();
-        Login();
+        if (PlayGamesPlatform.Instance.localUser.authenticated == false)
+        {
+            Social.localUser.Authenticate((bool success) =>
+            {
+                if (success)
+                {
+                    isGoogleLoginOk = true;
+                    Debug.Log("구글 로그인 성공");
+                    PlayFabIdCheck();
+                }
+                else
+                {
+                    Debug.Log("구글 로그인 실패");
+                    DevLogin.SetActive(true);
+                    LoadingPanel.SetActive(false);
+                }
+            });
+        }
     }
-    
-    public void DevLogin_Success()
+
+    public void PlayFabIdCheck() //playfab에 id 있는지 확인
     {
-        scene_move_manager.SceneNum=1;
-        ClickSound.Play();
+        if (isGoogleLoginOk == true)
+        {
+            userid = Social.localUser.id;
+        }
+        else
+        {
+            userid = InputFieldText.text;
+        }
+        var request = new LoginWithEmailAddressRequest { Email = userid + "@rand.com", Password = userid };
+        PlayFabClientAPI.LoginWithEmailAddress(request, (result) => { Login_Success(); }, (error) => { Register_UI.SetActive(true); });
+    }
+
+    public void Login_Success() //id가 있다면 displayname 받기
+    {
+        scene_move_manager.SceneNum = 1;
+        StartCoroutine(NextScene());
+    }
+
+    private void OnGetPlayerProfileSuccess(GetPlayerProfileResult result) //------------------------------------03_1 : 저장된 닉네임이 있다면 다음 씬으로 이동
+    {
+        displayName = result.PlayerProfile.DisplayName;
+        Debug.Log("Display Name: " + displayName);
+        LoadingPanel.SetActive(false);
+        scene_move_manager.SceneNum = 1;
         StartCoroutine(NextScene());
     }
     IEnumerator NextScene()
@@ -54,50 +97,45 @@ public class StartManager : MonoBehaviour
         SceneManager.LoadScene("LoadingScene");
     }
 
-    
-    public void Login()
+    //private void ongetplayerprofileerror(playfaberror error)//------------------------------------------------회원가입 창 띄우기
+    //{
+    //    register_ui.setactive(true);
+    //}
+
+    public void OnClick_RegisterComplete()//-------------------------------------------------------------------회원가입 완료
+    {
+        ClickSound.Play();
+        displayName = NickNameText.text;
+        PlayFabIdCheck();
+    }
+
+    public void OnClick_DevLoginBtn()
+    {
+        ClickSound.Play();
+        DevLogin.SetActive(false);
+        PlayFabIdCheck();
+    }
+
+    public void Register()
     {
         LoadingPanel.SetActive(true);
-        if(PlayGamesPlatform.Instance.localUser.authenticated==false)
+        ClickSound.Play();
+        if (isGoogleLoginOk == true)
         {
-            Social.localUser.Authenticate((bool success) =>
-            {
-                if (success){
-                    Debug.Log("구글 로그인 성공"); 
-                    PlayFabLogin();
-                }
-            else {
-                Debug.Log("구글 로그인 실패");
-                DevLogin.SetActive(true);
-                LoadingPanel.SetActive(false);            
-            }
-        });
+            userid = Social.localUser.id;
+
         }
-        
+        else
+        {
+            userid = InputFieldText.text;
+        }
+        var request = new RegisterPlayFabUserRequest
+        {
+            Email = userid + "@rand.com",
+            Password = userid,
+            Username = userid,
+            DisplayName = NickNameText.text
+        };
+        PlayFabClientAPI.RegisterPlayFabUser(request, (result) => { PlayFabIdCheck(); }, (error) => { Debug.Log("회원가입 실패"); });
     }
-    public void OnClick_DevLogin()
-    {
-        LoadingPanel.SetActive(true);
-        var request = new LoginWithEmailAddressRequest { Email = InputFieldText.text + "@rand.com", Password = InputFieldText.text };
-        PlayFabClientAPI.LoginWithEmailAddress(request, (result) => DevLogin_Success(), (error) => DevRegister());
-    }
-
-    public void DevRegister()
-    {
-        var request = new RegisterPlayFabUserRequest { Email = InputFieldText.text + "@rand.com", Password = InputFieldText.text, Username = InputFieldText.text };
-        PlayFabClientAPI.RegisterPlayFabUser(request, (result) => { OnClick_DevLogin(); }, (error) => Debug.Log("로그인 실패"));
-    }
-    public void PlayFabLogin()
-    {
-        var request = new LoginWithEmailAddressRequest { Email = Social.localUser.id + "@rand.com", Password = Social.localUser.id };
-        PlayFabClientAPI.LoginWithEmailAddress(request, (result) => DevLogin_Success(), (error) => PlayFabRegister());
-    }
-
-    public void PlayFabRegister()
-    {
-        var request = new RegisterPlayFabUserRequest { Email = Social.localUser.id + "@rand.com", Password = Social.localUser.id, Username = Social.localUser.userName };
-        PlayFabClientAPI.RegisterPlayFabUser(request, (result) => { PlayFabLogin(); }, (error) => Debug.Log("로그인 실패"));
-    }
-    
-    
 }
