@@ -178,15 +178,7 @@ public class StartSceneManager : MonoBehaviour
         AlertUI.SetActive(true);
     }
     
-    public void SaveLevel()
-    {
-        var request = new SetTitleDataRequest
-        {
-            Key="Level",
-            Value=LevelText.text.ToString()
-        };
-        PlayFabClientAPI.SetTitleData(request,OnLevelSaved, OnError);
-    }
+    
 
     public void OnLevelSaved()
     {
