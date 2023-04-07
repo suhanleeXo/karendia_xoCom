@@ -42,6 +42,7 @@ public class StartManager : MonoBehaviour
     public void GoogleLogin() //구글 로그인 여부
     {
         ClickSound.Play();
+        TouchUI.SetActive(false);
         LoadingPanel.SetActive(true);
         if (PlayGamesPlatform.Instance.localUser.authenticated == false)
         {
@@ -73,7 +74,7 @@ public class StartManager : MonoBehaviour
         {
             userid = InputFieldText.text;
         }
-        var request = new LoginWithEmailAddressRequest { Email = userid + "@rand.com", Password = userid };
+        var request = new LoginWithEmailAddressRequest { Email = userid + "@rand.com", Password = "123456" };
         PlayFabClientAPI.LoginWithEmailAddress(request, (result) => { Login_Success(); }, (error) => { Register_UI.SetActive(true); });
     }
 
@@ -129,13 +130,14 @@ public class StartManager : MonoBehaviour
         {
             userid = InputFieldText.text;
         }
+        displayName = NickNameText.text;
         var request = new RegisterPlayFabUserRequest
         {
             Email = userid + "@rand.com",
-            Password = userid,
+            Password = "123456",
             Username = userid,
             DisplayName = NickNameText.text
         };
-        PlayFabClientAPI.RegisterPlayFabUser(request, (result) => { PlayFabIdCheck(); }, (error) => { Debug.Log("회원가입 실패"); });
+        PlayFabClientAPI.RegisterPlayFabUser(request, (result) => { PlayFabIdCheck(); }, (error) => { Debug.LogError("HTTP Response Code: " + error.HttpCode); });
     }
 }
