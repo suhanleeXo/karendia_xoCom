@@ -80,17 +80,19 @@ public class StartManager : MonoBehaviour
 
     public void Login_Success() //id가 있다면 displayname 받기
     {
-        scene_move_manager.SceneNum = 1;
+        var request = new GetAccountInfoRequest { Username = userid };
+        PlayFabClientAPI.GetAccountInfo(request, GetAccountSuccess, GetAccountFailure);
+
+    }
+    private void GetAccountSuccess(GetAccountInfoResult result)
+    {
+        LoadingPanel.SetActive(false);
+        displayName = result.AccountInfo.TitleInfo.DisplayName;
         StartCoroutine(NextScene());
     }
-
-    private void OnGetPlayerProfileSuccess(GetPlayerProfileResult result) //------------------------------------03_1 : 저장된 닉네임이 있다면 다음 씬으로 이동
+    public void GetAccountFailure(GetAccountInfoResult result)
     {
-        displayName = result.PlayerProfile.DisplayName;
-        Debug.Log("Display Name: " + displayName);
-        LoadingPanel.SetActive(false);
-        scene_move_manager.SceneNum = 1;
-        StartCoroutine(NextScene());
+        Debug.Log("디스플레이 이름 조회 실패");
     }
     IEnumerator NextScene()
     {

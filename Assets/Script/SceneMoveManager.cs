@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 public class SceneMoveManager : MonoBehaviour
 {
     public int SceneNum;
+    public string userid;
+    public string DisplayName;
+    public int level;
+
     // Start is called before the first frame update
     void Start()
     {
