@@ -39,6 +39,7 @@ public class StartSceneManager : MonoBehaviour
     public Text GoldText;
     public Text StaminaText;
     public Text LevelText;
+    public Text KarendiaText;
     
     public List<GameObject> Character_Blind=new List<GameObject>();
 
@@ -58,25 +59,24 @@ public class StartSceneManager : MonoBehaviour
     //알림 팝업 통일
     public GameObject AlertUI;
     public Text AlertInfoText;
-    int MoveUINum;//팝업 yes버튼 터치 시 이동[1 : 상점 , ]
     
     SceneMoveManager scene_move_manager;
     
     public GameObject LoadingPanel;
     public int staminaBuyNum;
+
+    int MoveUINum;//팝업 yes버튼 터치 시 이동[1 : 상점 , ]
+
+    public float curEx;
+    public float maxEx;
+    public Slider PlayerExbar;
+
     public void Awake()
     {
-        Load();
-        GetInventory();
-        if(Social.localUser.userName==null){
-            nametext.text="Shinano";
-            ProfileNameText.text="Shinano";
-        }
-        else{
-            nametext.text=Social.localUser.userName;
-            ProfileNameText.text=Social.localUser.userName;
-        }
+        LoadingPanel.SetActive(true);
         scene_move_manager=GameObject.Find("SceneMoveManager").GetComponent<SceneMoveManager>();
+        Load();
+        //GetInventory();
     }
     public void Load()
     {
@@ -88,7 +88,37 @@ public class StartSceneManager : MonoBehaviour
         }
         BGM.clip=MainSound_Folder[BGM_Num];
         BGM.Play();
+        LevelText.text=scene_move_manager.level.ToString();
+        nametext.text=scene_move_manager.displayname;
+        curEx=scene_move_manager.curEx;
+        maxEx=scene_move_manager.maxEx;
+        PlayerExbar.value = curEx / maxEx;
+        //KarendiaText.text=scene_move_manager.karendia.ToString();
+        Debug.Log("플레이어 데이터 불러오기 성공");
+        OnGetVirtualCurrency();
     }
+
+    public void OnGetVirtualCurrency() //가상화폐 불러오기
+    {
+        var request = new GetUserInventoryRequest();
+        PlayFabClientAPI.GetUserInventory(request, GetInventorySuccess, GetInventoryFailure);
+    }
+
+    public void GetInventorySuccess(GetUserInventoryResult result)
+    {
+        Debug.Log("가상화폐 불러오기 성공");
+        GoldText.text=result.VirtualCurrency["GD"].ToString();
+        StaminaText.text=result.VirtualCurrency["ST"].ToString();
+        KarendiaText.text=result.VirtualCurrency["KR"].ToString();
+        scene_move_manager.karendia=result.VirtualCurrency["KR"];
+        LoadingPanel.SetActive(false);
+    }
+
+    public void GetInventoryFailure(PlayFabError error)
+    {
+        Debug.Log("가상화폐 불러오기 실패");
+    }
+
     public void AddMoney(int gold)
     {
         LoadingPanel.SetActive(true);
@@ -153,22 +183,7 @@ public class StartSceneManager : MonoBehaviour
         (error)=>Debug.Log("인벤토리 불러오기 실패"));
         LoadingPanel.SetActive(false);
     }
-    public void ClientGetTitleData()
-    {
-        LoadingPanel.SetActive(true);
-        PlayFabClientAPI.GetTitleData(new GetTitleDataRequest(),
-            result =>{
-                if(result.Data ==null)
-                    Debug.Log("No Test Key Data");
-                else
-                    Debug.Log(result.Data);
-            },
-            error => {
-                Debug.Log("error");
-            }
-            );
-        LoadingPanel.SetActive(false);
-    }
+    
     public void OnClick_BuyItem(int addStaminaNum)
     {
         ClickSound.Play();
@@ -177,23 +192,31 @@ public class StartSceneManager : MonoBehaviour
         AlertInfoText.text="해당 아이템을 구매하시겠습니까?";
         AlertUI.SetActive(true);
     }
-    
-    
-
-    public void OnLevelSaved()
-    {
-        Debug.Log("레벨 저장 성공");
-    }
-
-    public void OnError()
-    {
-        Debug.Log("레벨 저장 실패");
-    }
 
     public void OnClick_AlertNo()
     {
         ClickSound.Play();
         AlertUI.SetActive(false);
+    }
+
+    public void OnClick_AlertYes()
+    {
+        AlertUI.SetActive(false);
+        switch(MoveUINum){
+            case 1 :
+                ClickSound.Play();
+                Market_Option_Img[2].sprite=Change_Img;
+                Market_ScrollView[2].SetActive(true);
+                Market_UI.SetActive(true);
+                break;
+            case 2 :
+                OnClick_Blessing_UI();
+                break;
+            case 3 : //아이템(스테미나)구매 시
+                ClickSound.Play();
+                AddStamina(staminaBuyNum);
+                break;
+        }
     }
 
     public void OnClick_HalfDragonPlay()
@@ -235,6 +258,13 @@ public class StartSceneManager : MonoBehaviour
         }
     }
     
+    public void OnClick_CharacterBlindUI()
+    {
+        ClickSound.Play();
+        MoveUINum=2;
+        AlertInfoText.text="캐릭터가 없습니다.\n카렌디아를 소환해 캐릭터를 뽑으시겠습니까?";
+        AlertUI.SetActive(true);
+    }
     public void OnClick_Album()
     {
         ClickSound.Play();
